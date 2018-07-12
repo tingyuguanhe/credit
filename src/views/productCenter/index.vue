@@ -5,15 +5,14 @@
             <div><img src="../../assets/imgs/1.png" alt=""></div>
             <p class="intro">谭一春土家土膏贴风湿骨病止痛贴关节炎镇痛膏功效显著一贴见效</p>
             <div class="player">
-                    <video-player  class="video-player vjs-custom-skin"
-                                   ref="videoPlayer"
-                                   :playsinline="true"
-                                   :options="playerOptions"
-                                   @play="onPlayerPlay($event)"
-                                   @pause="onPlayerPause($event)"
-                    >
-                    </video-player>
-                  </div>
+                <video-player  class="video-player vjs-custom-skin"
+                        ref="videoPlayer"
+                        :playsinline="true"
+                        :options="playerOptions"
+                        @play="onPlayerPlay($event)"
+                        @pause="onPlayerPause($event)">
+                </video-player>
+            </div>
         </div>
         <nav-bars></nav-bars>
     </div>
@@ -21,8 +20,7 @@
     
 <script>
     import navBars from '@/components/navbars'
-    import { videoPlayer } from 'vue-video-player';
-
+    import { videoPlayer } from 'vue-video-player'
 
     export default{
         components:{navBars},
