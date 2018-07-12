@@ -1,5 +1,5 @@
 <template>
     <div>
-        home
-    </div> 
+        产品展示
+    </div>
 </template>
