@@ -9,8 +9,8 @@ import Home from '../views/home/home.vue'
 import UserCenter from '../views/userCenter/index.vue'
 import ProductCenter from '../views/productCenter/index.vue'
 import FeedBack from '../views/feedBack/index.vue'
-
-export default new Router({
+import Register from '../views/register/index.vue'
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -31,6 +31,14 @@ export default new Router({
       path: '/feed_back',
       name: 'FeedBack',
       component: FeedBack
-    }
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
+    },
+    
   ]
 })
+
+export default router

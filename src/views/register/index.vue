@@ -1,10 +1,10 @@
 <template>
     <div>
-        个人中心
+            注册
         <nav-bars></nav-bars>
     </div>
 </template>
-
+    
 <script>
     import navBars from '@/components/navbars'
 

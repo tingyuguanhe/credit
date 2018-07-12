@@ -1,10 +1,10 @@
 <template>
     <div>
-        个人中心
+        用户收益
         <nav-bars></nav-bars>
     </div>
 </template>
-
+    
 <script>
     import navBars from '@/components/navbars'
 

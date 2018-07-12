@@ -7,6 +7,11 @@ import router from './router'
 Vue.config.productionTip = false
 
 import '../src/styles/common.scss'
+import VideoPlayer from 'vue-video-player'
+require('video.js/dist/video-js.css')
+require('vue-video-player/src/custom-theme.css')
+Vue.use(VideoPlayer)
+
 
 /* eslint-disable no-new */
 new Vue({

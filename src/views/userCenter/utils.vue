@@ -1,6 +1,6 @@
 <template>
     <div>
-        个人中心
+        实用工具
         <nav-bars></nav-bars>
     </div>
 </template>
