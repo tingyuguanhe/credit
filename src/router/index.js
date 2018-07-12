@@ -23,7 +23,7 @@ const router = new Router({
       component: UserCenter
     },
     {
-      path: '/product_center',
+      path: '/product_center/:id',
       name: 'ProductCenter',
       component: ProductCenter
     },
