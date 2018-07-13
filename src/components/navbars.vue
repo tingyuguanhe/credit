@@ -21,11 +21,13 @@
                 <div>个人中心</div>
             </li>
         </ul>
-        <ul class="list_modal">
-            <li v-for="(item,index) in productsData" :key="index" @click="routeLink('1', item)">{{item.name}}</li>
-        </ul>
-        <div class="arrow">
-            <img src="../assets/icons/arrow.png" alt="">
+        <div class="list_modal">
+            <ul>
+                <li v-for="(item,index) in productsData" :key="index" @click="routeLink('1', item)">{{item.name}}</li>
+            </ul>
+            <div class="arrow">
+                <img src="../assets/icons/arrow.png" alt="">
+            </div>
         </div>
     </div>
 </template>
@@ -96,26 +98,30 @@
                 }
             }
         }
-        ul.list_modal{
+        .list_modal{
             position: absolute;
-            left: 0;
-            bottom: 1rem;
+            left: 0.1rem;
+            bottom: 1.3rem;
             background: #ffff;
             border-radius: 5px;
             border: 2px solid #afa8a7;
-
-            width: 1.6rem;
+            
             li{
+                padding: 0 0.5rem;
                 height: 0.8rem;
                 line-height: 0.8rem;
                 border-bottom: 2px solid #afa8a7;
                 font-size: 0.26rem;
+                &:last-child{
+                    border-bottom: none;
+                }
             }
         }
         .arrow{
             position: absolute;
-            bottom: 0.74rem;
-            left: 0.65rem;
+            bottom: -0.34rem;
+            left: 50%;
+            margin-left: -0.2rem;
             img{
                 width: 0.34rem;
             }
