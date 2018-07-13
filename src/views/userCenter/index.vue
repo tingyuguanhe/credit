@@ -8,7 +8,7 @@
                     <li class="name">迪丽热巴</li>  
                     <li class="clearfix">
                         <div class="f_left">诚信宝状态：<span class="status">审核中</span></div>
-                        <button class="f_left">我的收益</button>
+                        <button class="f_left" @click="myIncome">我的收益</button>
                     </li>
                     <li class="clearfix">
                         <div class="f_left">我的二维码：<a href="javascript:;">点击下载</a></div>
@@ -109,6 +109,11 @@
         data(){
             return{
 
+            }
+        },
+        methods: {
+            myIncome(){
+                this.$router.push({name: 'MyIncome'});
             }
         }
     }

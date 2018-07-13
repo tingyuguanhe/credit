@@ -19,6 +19,9 @@ import EditUserInfo from '../views/userCenter/editUserInfo.vue'
 import ChangePsd from '../views/userCenter/changePsd.vue'
 import CheckCode from '../views/userCenter/checkCode.vue'
 
+import MyIncome from '../views/userCenter/income.vue'
+
+
 
 const router = new Router({
   routes: [
@@ -118,6 +121,15 @@ const router = new Router({
         title:'申请修改填报信息'
       }
     },
+    {
+      path: '/income',
+      name: 'MyIncome',
+      component: MyIncome,
+      meta:{
+        title:'我的收益'
+      }
+    },
+    
 
     
     

@@ -10,7 +10,7 @@
                         </div>
                         <div class="name f_right">{{item.name}}</div>
                     </div>
-                    <div class="switch f_right">
+                    <div class="switch f_right" @click="switchStatus(item)">
                         <span class="bg" v-if="item.status">
                             <span class="round open"></span>
                         </span>
@@ -73,6 +73,12 @@
                     
                 ]
             }
+        },
+        methods: {
+            switchStatus(item){
+                item.status = !item.status;
+               
+            }
         }
     }
 </script>
@@ -99,8 +105,8 @@
                         width: 2.6rem;
                     }
                     img{
-                        margin: 0.2rem 0 0 0;
-                        width: 0.9rem;
+                        margin: 0.4rem 0 0 0;
+                        width: 0.7rem;
                     }
                     
                     .name{
@@ -139,9 +145,21 @@
 
                     &:nth-child(1){
                         img{
-                            width: 1.1rem;
+                            width: 1rem;
                         }
                     }
+                    &:nth-child(4){
+                        img{
+                            margin: 0.5rem 0 0 0;
+                            width: 1rem;
+                        }
+                    }
+                    &:nth-child(7){
+                        img{
+                            width: 0.8rem;
+                        }
+                    }
+                    
                     
                 }
             }

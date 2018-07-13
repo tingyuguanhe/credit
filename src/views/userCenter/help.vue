@@ -8,8 +8,6 @@
             <p class="tip">请详细描述您遇到的问题，有助于我们快速定位并解决问题，或留下您宝贵的建议或意见，我们会认真评估！</p>
             <button>问&nbsp;题&nbsp;提&nbsp;交</button>
         </div>
-        
-
         <nav-bars></nav-bars>
     </div>
 </template>

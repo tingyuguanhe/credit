@@ -48,3 +48,7 @@ input{
     box-sizing: border-box;
     margin: 0.2rem 0;
 }
+
+button:focus{
+    outline: none;
+}
