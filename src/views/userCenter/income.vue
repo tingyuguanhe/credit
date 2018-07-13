@@ -14,7 +14,7 @@
                     <ul>
                         <li v-for="(item,index) in firstData" :key="index">
                             <span>{{item.name}}</span>
-                            <span>{{item.money}}元</span>
+                            <span class="money">{{item.money}}元</span>
                         </li>
                     </ul>
                 </div>
@@ -24,7 +24,7 @@
                     <ul>
                         <li v-for="(item,index) in secondData" :key="index">
                             <span>{{item.name}}</span>
-                            <span>{{item.money}}元</span>
+                            <span class="money">{{item.money}}元</span>
                         </li>
                     </ul>
                 </div>
@@ -60,6 +60,10 @@
                     {
                         name:'王**',
                         money: '180'
+                    },
+                    {
+                        name:'吴**',
+                        money: '380'
                     }
                 ]
             }
@@ -113,6 +117,9 @@
                 .head{
                     color: #221815;
                     font-size: 0.36rem;
+                }
+                .money{
+                    margin: 0 0 0 0.8rem;
                 }
             }
             .income_wrap{
