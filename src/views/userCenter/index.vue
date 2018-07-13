@@ -18,49 +18,59 @@
             </div>
             <ul class="rights">
                 <li class="clearfix">
-                    <div class="f_left left_icon">
-                        <img width="25" src="../../assets/icons/1.png" alt="">
-                    </div>
-                    <div class="f_left clearfix info_wrap">
-                        <span class="f_left">基本设置</span>
-                        <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
-                    </div>
+                    <router-link :to="{ name: 'Setting'}">
+                        <div class="f_left left_icon">
+                            <img width="25" src="../../assets/icons/1.png" alt="">
+                        </div>
+                        <div class="f_left clearfix info_wrap">
+                            <span class="f_left">基本设置</span>
+                            <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
+                        </div>
+                    </router-link>
                 </li>
                 <li class="clearfix">
-                    <div class="f_left left_icon">
-                        <img width="26" src="../../assets/icons/2.png" alt="">
-                    </div>
-                    <div class="f_left clearfix info_wrap">
-                        <span class="f_left">我的微店</span>
-                        <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
-                    </div>
+                    <a href="javascript:;">
+                        <div class="f_left left_icon">
+                            <img width="26" src="../../assets/icons/2.png" alt="">
+                        </div>
+                        <div class="f_left clearfix info_wrap">
+                            <span class="f_left">我的微店</span>
+                            <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
+                        </div>
+                    </a>
                 </li>
                 <li class="clearfix">
-                    <div class="f_left left_icon">
-                        <img width="25" src="../../assets/icons/3.png" alt="">
-                    </div>
-                    <div class="f_left clearfix info_wrap">
-                        <span class="f_left">宣传视频</span>
-                        <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
-                    </div>
+                    <a href="javascript:;">
+                        <div class="f_left left_icon">
+                            <img width="25" src="../../assets/icons/3.png" alt="">
+                        </div>
+                        <div class="f_left clearfix info_wrap">
+                            <span class="f_left">宣传视频</span>
+                            <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
+                        </div>
+                    </a>
                 </li>
                 <li class="clearfix">
-                    <div class="f_left left_icon">
-                        <img width="18" src="../../assets/icons/4.png" alt="">
-                    </div>
-                    <div class="f_left clearfix info_wrap">
-                        <span class="f_left">地理位置</span>
-                        <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
-                    </div>
+                    <a href="javascript:;">
+                        <div class="f_left left_icon">
+                            <img width="18" src="../../assets/icons/4.png" alt="">
+                        </div>
+                        <div class="f_left clearfix info_wrap">
+                            <span class="f_left">地理位置</span>
+                            <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
+                        </div>
+                    </a>
                 </li>
                 <li class="clearfix">
-                    <div class="f_left left_icon">
-                        <img width="22" src="../../assets/icons/5.png" alt="">
-                    </div>
-                    <div class="f_left clearfix info_wrap">
-                        <span class="f_left">个人荣誉</span>
-                        <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
-                    </div>
+                    <a href="javascript:;">
+                        <div class="f_left left_icon">
+                            <img width="22" src="../../assets/icons/5.png" alt="">
+                        </div>
+                        <div class="f_left clearfix info_wrap">
+                            <span class="f_left">个人荣誉</span>
+                            <img class="arrow f_right" src="../../assets/icons/arrow_right.png" alt="">
+                        </div>
+                    </a>
                 </li>
             </ul>
 
@@ -69,8 +79,10 @@
                 <div class="tip">推广工具：</div>
                 <ul>
                     <li class="clearfix">
-                        <img src="../../assets/icons/6.png" alt="">
-                        <span>软文编辑</span>
+                        <router-link :to="{name:'ArticleEdit'}">
+                            <img src="../../assets/icons/6.png" alt="">
+                            <span>软文编辑</span>
+                        </router-link>
                     </li>
                     <li class="clearfix">
                         <img src="../../assets/icons/7.png" alt="">
@@ -167,6 +179,9 @@
             box-sizing: border-box;
             margin: 0.4rem 0 0 0;
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+            a{
+                color: #3B3B3B;
+            }
             li{
                 font-size: 0.3rem;
                 color:#3B3B3B;
@@ -198,6 +213,9 @@
             box-sizing: border-box;
             margin: 0.4rem 0 0 0;
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+            a{
+                color: #5F5E5E;
+            }
             .tip{
                 color:#5F5E5E;
                 font-size: 0.3rem;
