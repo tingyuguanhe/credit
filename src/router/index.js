@@ -17,6 +17,7 @@ import Utils from '../views/userCenter/utils.vue'
 import EditUserInfo from '../views/userCenter/editUserInfo.vue'
 
 import ChangePsd from '../views/userCenter/changePsd.vue'
+import CheckCode from '../views/userCenter/checkCode.vue'
 
 
 const router = new Router({
@@ -109,16 +110,19 @@ const router = new Router({
         title:'修改密码'
       }
     },
+    {
+      path: '/check_code',
+      name: 'CheckCode',
+      component: CheckCode,
+      meta:{
+        title:'申请修改填报信息'
+      }
+    },
 
     
-
     
 
-    
-    
-    
-    
-    
+
     
   ]
 })

@@ -14,7 +14,7 @@
                     </router-link>
                 </li>
                 <li class="clearfix">
-                    <router-link :to="{name: 'EditUserInfo'}">
+                    <router-link :to="{name: 'CheckCode'}">
                         <div>申请修改填报信息</div>
                         <img src="../../assets/icons//arrow_right.png" alt="">
                     </router-link>

@@ -45,18 +45,7 @@
             font-weight: 500;
             margin: 0.4rem 0 0 0;
         }
-        input{
-            height: 0.8rem;
-            width: 100%;
-            line-height: 0.8rem;
-            padding: 0 0.2rem;
-            background: #fff;
-            border-radius: 5px;
-            font-size: 0.26rem;
-            border:none;
-            box-sizing: border-box;
-            margin: 0.2rem 0;
-        }
+        
         .textarea{
             width: 99%;
             border:1px solid rgba(238,238,238,1);
@@ -80,7 +69,7 @@
             height: 0.9rem;
             line-height: 0.9rem;
             color:#fff;
-            font-size: 0.4rem;
+            font-size: 0.38rem;
         }
     }
     
