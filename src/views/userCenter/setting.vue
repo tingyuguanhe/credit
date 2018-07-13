@@ -8,20 +8,28 @@
                     <img src="../../assets/icons//arrow_right.png" alt="">
                 </li>
                 <li class="clearfix">
-                    <div>修改密码</div>
-                    <img src="../../assets/icons//arrow_right.png" alt="">
+                    <router-link :to="{name: 'ChangePsd'}">
+                        <div>修改密码</div>
+                        <img src="../../assets/icons//arrow_right.png" alt="">
+                    </router-link>
                 </li>
                 <li class="clearfix">
-                    <div>申请修改填报信息</div>
-                    <img src="../../assets/icons//arrow_right.png" alt="">
+                    <router-link :to="{name: 'EditUserInfo'}">
+                        <div>申请修改填报信息</div>
+                        <img src="../../assets/icons//arrow_right.png" alt="">
+                    </router-link>
                 </li>
                 <li class="clearfix">
-                    <div>实用工具</div>
-                    <img src="../../assets/icons//arrow_right.png" alt="">      
+                    <router-link :to="{name: 'Utils'}">
+                        <div>实用工具</div>
+                        <img src="../../assets/icons//arrow_right.png" alt=""> 
+                    </router-link>     
                 </li>
                 <li class="clearfix">
-                    <div>帮助与反馈</div>
-                    <img src="../../assets/icons//arrow_right.png" alt="">     
+                    <router-link :to="{name: 'Help'}">
+                        <div>帮助与反馈</div>
+                        <img src="../../assets/icons//arrow_right.png" alt="">    
+                    </router-link> 
                 </li>
             </ul>
         </div>
@@ -59,10 +67,13 @@
                 padding: 0.2rem 0.15rem;
                 box-sizing: border-box;
                 li{
+                    a{
+                        color:#000;
+                    }
+                    color:#000;
                     height: 0.8rem;
                     overflow: hidden;
                     font-size: 0.3rem;
-                    color:#000;
                     border-bottom: 2px solid rgba(201,202,202,1);
                     img{
                         float: right;

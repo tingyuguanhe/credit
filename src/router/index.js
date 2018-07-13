@@ -12,6 +12,12 @@ import FeedBack from '../views/feedBack/index.vue'
 import Register from '../views/register/index.vue'
 import Setting from '../views/userCenter/setting.vue'
 import ArticleEdit from '../views/tools/articleEdit.vue';
+import Help from '../views/userCenter/help.vue'
+import Utils from '../views/userCenter/utils.vue'
+import EditUserInfo from '../views/userCenter/editUserInfo.vue'
+
+import ChangePsd from '../views/userCenter/changePsd.vue'
+
 
 const router = new Router({
   routes: [
@@ -71,6 +77,45 @@ const router = new Router({
         title:'软文编辑'
       }
     },
+    {
+      path: '/help',
+      name: 'Help',
+      component: Help,
+      meta:{
+        title:'帮助与反馈'
+      }
+    },
+    {
+      path: '/utils',
+      name: 'Utils',
+      component: Utils,
+      meta:{
+        title:'实用工具'
+      }
+    },
+    {
+      path: '/edit_user_info',
+      name: 'EditUserInfo',
+      component: EditUserInfo,
+      meta:{
+        title:'编辑用户信息'
+      }
+    },
+    {
+      path: '/change_psd',
+      name: 'ChangePsd',
+      component: ChangePsd,
+      meta:{
+        title:'修改密码'
+      }
+    },
+
+    
+
+    
+
+    
+    
     
     
     
