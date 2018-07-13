@@ -1,6 +1,6 @@
 <template>
     <div class="product_page">
-        <div class="title">国信诚信宝</div>
+        <div class="title">国&nbsp;信&nbsp;诚&nbsp;信&nbsp;宝</div>
         <div class="nr">
             <div><img src="../../assets/imgs/1.png" alt=""></div>
             <p class="intro">谭一春土家土膏贴风湿骨病止痛贴关节炎镇痛膏功效显著一贴见效</p>

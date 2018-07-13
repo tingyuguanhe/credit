@@ -1,11 +1,10 @@
 <template>
     <div class="bottom_navs">
         <ul class="bars">
-            <li>
+            <li @click="showProductList">
                 <img src="../assets/icons/nav1.png" alt="">
                 <div>
                     <span>产品展示</span>    
-                    
                 </div>
             </li>
             <li @click="routeLink('2')">
@@ -21,7 +20,7 @@
                 <div>个人中心</div>
             </li>
         </ul>
-        <div class="list_modal">
+        <div class="list_modal" v-show="productsList">
             <ul>
                 <li v-for="(item,index) in productsData" :key="index" @click="routeLink('1', item)">{{item.name}}</li>
             </ul>
@@ -36,7 +35,7 @@
     export default{
         data(){
             return{
-                productsList: true,
+                productsList: false,
                 productsData:[
                     {
                         id: 1,
@@ -54,6 +53,9 @@
             }
         },
         methods: {
+            showProductList(){
+                this.productsList = true;
+            },
             routeLink(index,item){
                 switch (index){
                     case "1":
