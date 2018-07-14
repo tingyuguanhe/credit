@@ -4,7 +4,7 @@
         <div class="nr">
             <p class="tip">短信验证</p>
             <p>请用手机{{num}}获取验证码短信</p>
-            <input type="text" placeholder="">
+            <input type="text" placeholder="" v-model="code">
             <button>获取验证码</button>
         </div>
         <nav-bars></nav-bars>
@@ -17,7 +17,20 @@
         components:{navBars},
         data(){
             return{
-                num: '150******15'
+                num: '150******15',
+                code:''
+            }
+        },
+        watch: {
+            code: function(newVal, oldVal){
+                if(newVal == oldVal){
+                    return
+                }else{
+                    if(newVal.length == 4){
+                        this.$router.push({name:'EditUserInfo'});
+                    }
+                    
+                }
             }
         }
     }

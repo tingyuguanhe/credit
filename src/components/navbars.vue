@@ -66,7 +66,7 @@
                         this.$router.push({name:'FeedBack'});
                     break;
                     case "3":
-                        this.$router.push({name:'Register'});
+                        this.$router.push({name:'RegisterOneStep'});
                     break;
                     case "4":
                         this.$router.push({name:'UserCenter'});

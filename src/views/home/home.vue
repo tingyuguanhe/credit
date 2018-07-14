@@ -147,7 +147,7 @@
                 width: 1.8rem;
             }
             .hand{
-                width: 0.7rem;
+                width: 0.6rem;
                 margin: 0 0.2rem;
             }
             .daily{
@@ -166,7 +166,7 @@
             }
         }
         .infos{
-            width: 96%;
+            width: 97%;
             margin: 0 auto;
             background: url('../../assets/imgs/display_bg.jpeg') no-repeat;
             height: 5rem;
@@ -212,7 +212,7 @@
             color:#000;
             .brand_head{
                 width: 64%;
-                margin: 0 auto 0.26rem auto;
+                margin: 0 auto 0.2rem auto;
             }
             .double_line{
                 margin: 0.2rem 0 0 0;

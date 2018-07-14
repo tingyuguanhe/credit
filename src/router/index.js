@@ -9,7 +9,9 @@ import Home from '../views/home/home.vue'
 import UserCenter from '../views/userCenter/index.vue'
 import ProductCenter from '../views/productCenter/index.vue'
 import FeedBack from '../views/feedBack/index.vue'
-import Register from '../views/register/index.vue'
+import RegisterOneStep from '../views/register/oneStep.vue'
+
+
 import Setting from '../views/userCenter/setting.vue'
 import ArticleEdit from '../views/tools/articleEdit.vue';
 import Help from '../views/userCenter/help.vue'
@@ -58,9 +60,9 @@ const router = new Router({
       }
     },
     {
-      path: '/register',
-      name: 'Register',
-      component: Register,
+      path: '/register_one_step',
+      name: 'RegisterOneStep',
+      component: RegisterOneStep,
       meta:{
         title:'在线申请'
       }
