@@ -21,6 +21,15 @@
                     </li>
                 </ul>
             </div>
+            <div class="tip">初始密码为注册手机号</div>
+            <div class="agree clearfix">
+                <span class="f_left check_box"></span>
+                <p class="f_left">我已阅读并同意注册条款</p>
+            </div>
+            <div class="btns">
+                <button @click="registerNextStep">下一步</button>
+                <button>返回老用户登录</button>
+            </div>
         </div>
         <nav-bars></nav-bars>
     </div>
@@ -35,6 +44,11 @@
             return{
                 name: 'XXXXXXX',
                 num:'（18766660909）'
+            }
+        },
+        methods: {
+            registerNextStep(){
+                this.$router.push({name: 'EditUserInfo'});
             }
         }
     }
@@ -104,10 +118,48 @@
                     width: 2.4rem;
                     height: 1rem;
                     line-height: 1rem;
-                    font-size: 0.36rem;
+                    font-size: 0.3rem;
                     color:#fff;
                     border-radius: 8px;
                     float: right;
+                }
+            }
+            .tip{
+                color:#2E7CD2;
+                font-size: 0.26rem;
+                padding: 0 0.22rem;
+                text-align: left;
+                margin: 0.5rem 0 0.2rem 0;
+                font-weight: 500;
+            }
+            .agree{
+                padding: 0 0.22rem;
+                .check_box{
+                    width: 0.24rem;
+                    height: 0.24rem;
+                    border:1px solid #21538B;
+                    margin-top: 0.05rem;
+                }
+                p{
+                    color: #21538B;
+                    font-size: 0.26rem;
+                    font-weight: 500;
+                    text-align: left;
+                    margin: 0 0.1rem;
+
+                }
+            }
+            .btns{
+                margin: 0.8rem 0 0 0;
+                button{
+                    width: 5rem;
+                    height: 0.96rem;
+                    line-height: 0.96rem;
+                    background: #2E7CD2;
+                    border-radius: 10px;
+                    font-size: 0.32rem;
+                    color: #fff;
+                    margin-bottom: 0.3rem;
                 }
             }
         }

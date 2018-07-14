@@ -10,7 +10,7 @@ import UserCenter from '../views/userCenter/index.vue'
 import ProductCenter from '../views/productCenter/index.vue'
 import FeedBack from '../views/feedBack/index.vue'
 import RegisterOneStep from '../views/register/oneStep.vue'
-
+import Finished from '../views/register/finished.vue'
 
 import Setting from '../views/userCenter/setting.vue'
 import ArticleEdit from '../views/tools/articleEdit.vue';
@@ -131,6 +131,16 @@ const router = new Router({
         title:'我的收益'
       }
     },
+    {
+      path: '/finished',
+      name: 'Finished',
+      component: Finished,
+      meta:{
+        title:'完成认证'
+      }
+    },
+
+    
     
 
     

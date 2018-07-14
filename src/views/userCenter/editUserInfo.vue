@@ -55,7 +55,7 @@
                 </li>
             </ul>
             <div>
-                <button class="next_step">下一步</button>
+                <button class="next_step" @click="finishEdit">下一步</button>
             </div>
         </div>
         <nav-bars></nav-bars>
@@ -79,11 +79,12 @@
                 }else{
                     this.radioChecked = flag
                     
-                }
-                
-               
-                
+                } 
+            },
+            finishEdit(){
+                this.$router.push({name: 'Finished'});
             }
+            
         }
     }
 </script>
