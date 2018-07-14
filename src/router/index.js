@@ -9,8 +9,8 @@ import Home from '../views/home/home.vue'
 import UserCenter from '../views/userCenter/index.vue'
 import ProductCenter from '../views/productCenter/index.vue'
 import FeedBack from '../views/feedBack/index.vue'
-import RegisterOneStep from '../views/register/oneStep.vue'
-import Finished from '../views/register/finished.vue'
+import RegisterOneStep from '../views/apply/oneStep.vue'
+import Finished from '../views/apply/finished.vue'
 
 import Setting from '../views/userCenter/setting.vue'
 import ArticleEdit from '../views/tools/articleEdit.vue';
@@ -25,7 +25,9 @@ import MyIncome from '../views/userCenter/income.vue'
 
 
 import MakePlacard from '../views/tools/makePlacard.vue'
+import PlacardTpl from '../views/tools/placardTpl.vue'
 
+import OnlineApply from '../views/apply/onlineApply.vue'
 
 
 const router = new Router({
@@ -143,14 +145,32 @@ const router = new Router({
       }
     },
     {
-      path: '/make_placard',
+      path: '/make_placard/:id',
       name: 'MakePlacard',
       component: MakePlacard,
       meta:{
         title:'海报生成器'
       }
     },
+    {
+      path: '/placard_tpl',
+      name: 'PlacardTpl',
+      component: PlacardTpl,
+      meta:{
+        title:'海报生成器'
+      }
+    },
+    {
+      path: '/online_apply',
+      name: 'OnlineApply',
+      component: OnlineApply,
+      meta:{
+        title:'在线申请'
+      }
+      
+    }
 
+    
 
     
     

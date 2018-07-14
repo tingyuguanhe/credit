@@ -17,12 +17,27 @@
                 </ul>
             </div>
             <div>
-                <button>进入首页</button>
+                <button @click="goHome">进入首页</button>
             </div>
         </div>
     </div>
 </template>
 
+
+<script>
+    export default{
+        data(){
+            return{
+
+            }
+        },
+        methods: {
+            goHome(){
+                this.$router.push({name:'Home'})
+            }
+        }
+    }
+</script>
 <style lang="scss">
     .finish_register{
         position: absolute;
