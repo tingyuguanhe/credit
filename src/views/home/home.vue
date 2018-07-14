@@ -36,6 +36,7 @@
                     <span>wekfhweuuie</span>
                 </li>
             </ul>
+            <div class="check_status"><img src="../../assets/icons/check_status.png" alt=""></div>
             <div class="btns">
                 <button>一键拨打</button>
                 <button>加好友</button>
@@ -154,6 +155,16 @@
                 vertical-align: bottom;
             }
         }
+        .check_status{
+            position: absolute;
+            top: 32%;
+            left: 50%;
+            margin: -1.4rem;
+            z-index: 10;
+            img{
+                width: 3rem;
+            }
+        }
         .infos{
             width: 96%;
             margin: 0 auto;
@@ -174,7 +185,7 @@
             .btns{
                 width: 1.4rem;
                 position: absolute;
-                top: 4.5rem;
+                top: 4.1rem;
                 left: 4rem;
             }
             button{
@@ -206,8 +217,8 @@
             .double_line{
                 margin: 0.2rem 0 0 0;
                 div{
-                    width:3em;
-                    height: 2px;
+                    width:2.8em;
+                    height: 1px;
                     background: #000;
                     &:first-child{
                         margin-bottom: 0.02rem; 
@@ -220,6 +231,7 @@
         }
 
         ul.brand_list{
+            padding: 0 0.1rem;
             li{
                 float: left;
                 font-size:0.22rem;
@@ -228,8 +240,7 @@
                 width: 30%;
                 margin: 0.4rem 0 0 0;
                 img{
-                    width: 2.3rem;
-                    
+                    width: 2.2rem;
                 }
             }
             li:nth-child(2n){

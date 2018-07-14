@@ -3,18 +3,24 @@
         <div class="title">国&nbsp;信&nbsp;诚&nbsp;信&nbsp;宝</div>
         <div class="nr">
             <div class="head clearfix">
-                <img class="f_left" src="../../assets/imgs/timg.jpg" alt="">
-                <ul class="f_left infos">
-                    <li class="name">迪丽热巴</li>  
-                    <li class="clearfix">
-                        <div class="f_left">诚信宝状态：<span class="status">审核中</span></div>
-                        <button class="f_left" @click="myIncome">我的收益</button>
-                    </li>
-                    <li class="clearfix">
-                        <div class="f_left">我的二维码：<a href="javascript:;">点击下载</a></div>
-                        <div class="f_left gap">我的诚信宝：<a href="javascript:;" class="gray">点击下载</a></div>
-                    </li>
-                </ul>
+                <div class="no_login clearfix" v-if="!login" @click="handLogin">
+                    <img class="f_left" src="../../assets/icons/login_icon.png" alt="">
+                    <span class="f_left">点击登录</span>
+                </div>
+                <div class="has_login" v-else>
+                    <img class="f_left" src="../../assets/imgs/timg.jpg" alt="">
+                    <ul class="f_left infos">
+                        <li class="name">迪丽热巴</li>  
+                        <li class="clearfix">
+                            <div class="f_left">诚信宝状态：<span class="status">审核中</span></div>
+                            <button class="f_left" @click="myIncome">我的收益</button>
+                        </li>
+                        <li class="clearfix">
+                            <div class="f_left">我的二维码：<a href="javascript:;">点击下载</a></div>
+                            <div class="f_left gap">我的诚信宝：<a href="javascript:;" class="gray">点击下载</a></div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <ul class="rights">
                 <li class="clearfix">
@@ -108,12 +114,16 @@
         components:{navBars},
         data(){
             return{
-
+                login: false
             }
         },
         methods: {
             myIncome(){
                 this.$router.push({name: 'MyIncome'});
+            },
+            //登录
+            handLogin(){
+
             }
         }
     }
@@ -139,11 +149,20 @@
             box-sizing: border-box;
             font-size: 0.18rem;
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+            .no_login{
+                span{
+                    display: inline-block;
+                    font-size: 0.34rem;
+                    color:#000;
+                    font-weight: 500;
+                    margin: 0.32rem 0 0 0;
+                }
+            }
             img{
                 width: 1.1rem;
                 height: 1.1rem;
                 border-radius: 50%;
-                margin: 0 0.3rem 0 0.4rem;
+                margin: 0.04rem 0.3rem 0 0.4rem;
                 box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
             }
             ul.infos{

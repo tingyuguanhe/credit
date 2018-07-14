@@ -23,6 +23,7 @@
         <div class="list_modal" v-show="productsList">
             <ul>
                 <li v-for="(item,index) in productsData" :key="index" @click="routeLink('1', item)">{{item.name}}</li>
+                <li class="add">+</li>
             </ul>
             <div class="arrow">
                 <img src="../assets/icons/arrow.png" alt="">
@@ -54,7 +55,7 @@
         },
         methods: {
             showProductList(){
-                this.productsList = true;
+                this.productsList = !this.productsList;
             },
             routeLink(index,item){
                 switch (index){
@@ -117,6 +118,9 @@
                 &:last-child{
                     border-bottom: none;
                 }
+            }
+            li.add{
+                font-size: 0.36rem;
             }
         }
         .arrow{
