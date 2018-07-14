@@ -78,7 +78,7 @@
                 border-radius: 30px;
                 font-size: 0.34rem;
                 color: #fff;
-                margin: 0.4rem 0;
+                margin: 1rem 0 0.4rem 0;
             }
         }
     }

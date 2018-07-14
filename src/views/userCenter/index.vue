@@ -91,8 +91,10 @@
                         </router-link>
                     </li>
                     <li class="clearfix">
-                        <img src="../../assets/icons/7.png" alt="">
-                        <span>海报生成器</span>
+                        <router-link :to="{name:'MakePlacard'}">
+                            <img src="../../assets/icons/7.png" alt="">
+                            <span>海报生成器</span>
+                        </router-link>
                     </li>
                     <li class="clearfix">
                         <img src="../../assets/icons/8.png" alt="">

@@ -24,6 +24,9 @@ import CheckCode from '../views/userCenter/checkCode.vue'
 import MyIncome from '../views/userCenter/income.vue'
 
 
+import MakePlacard from '../views/tools/makePlacard.vue'
+
+
 
 const router = new Router({
   routes: [
@@ -139,7 +142,17 @@ const router = new Router({
         title:'完成认证'
       }
     },
+    {
+      path: '/make_placard',
+      name: 'MakePlacard',
+      component: MakePlacard,
+      meta:{
+        title:'海报生成器'
+      }
+    },
 
+
+    
     
     
 
