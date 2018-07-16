@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="wrap">   
-                <span class="money">¥ 398</span>
+                <span class="money">¥ {{money * num}}</span>
             </div>
             <div class="tip pay_type">支付方式：</div>
             <div class="wrap clearfix">   
@@ -41,6 +41,7 @@
             return{
                 id:'12345678',
                 num:0,
+                money: '123',
                 checkStatus: 'weixin'
             }
         },

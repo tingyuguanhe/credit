@@ -125,7 +125,7 @@
             },
             //登录
             handLogin(){
-
+                this.$router.push({name:'Login'});
             }
         }
     }

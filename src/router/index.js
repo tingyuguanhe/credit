@@ -31,7 +31,7 @@ import OnlineApply from '../views/apply/onlineApply.vue'
 
 import Authorize from '../views/authorize/index.vue'
 
-
+import Login from '../views/login/index.vue'
 
 const router = new Router({
   routes: [
@@ -179,6 +179,15 @@ const router = new Router({
         title:'授权'
       }
     },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login,
+      meta:{
+        title:'登录'
+      }
+    },
+    
     
 
     

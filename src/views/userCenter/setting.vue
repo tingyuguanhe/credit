@@ -4,8 +4,10 @@
         <div class="nr">
             <ul>
                 <li class="clearfix">
-                    <div>点击续费期限</div>
-                    <img src="../../assets/icons//arrow_right.png" alt="">
+                    <router-link :to="{name: 'OnlineApply'}">
+                        <div>点击续费期限</div>
+                        <img src="../../assets/icons//arrow_right.png" alt="">
+                    </router-link>
                 </li>
                 <li class="clearfix">
                     <router-link :to="{name: 'ChangePsd'}">

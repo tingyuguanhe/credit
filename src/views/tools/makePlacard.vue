@@ -43,6 +43,7 @@
         width: 1.9rem;
     }
     ul{
+        
         li{
             float: left;
             width: 50%;
@@ -52,6 +53,7 @@
             &:first-child{
                 background: #fff;
                 color:#000;
+                border-top: 1px solid #bcbcbc;
             }
             &:last-child{
                 background: #4070bf;
