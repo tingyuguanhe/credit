@@ -13,7 +13,7 @@
                 </li>
             </ul>
             <div  class="login_btn">
-                <button>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                <button @click="login">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
             </div>
             
         </div>
@@ -21,7 +21,18 @@
 </template>
 
 <script>
+export default{
+    data(){
+        return{
 
+        }
+    },
+    methods: {
+        login(){
+            console.log('登录逻辑');
+        }
+    }
+}
 </script>
 
 <style lang="scss">

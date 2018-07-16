@@ -97,8 +97,10 @@
                         </router-link>
                     </li>
                     <li class="clearfix">
-                        <img src="../../assets/icons/8.png" alt="">
-                        <span>吸粉功能</span>
+                        <router-link :to="{name: 'ArticleLibrary'}">
+                            <img src="../../assets/icons/8.png" alt="">
+                            <span>吸粉功能</span>
+                        </router-link>
                     </li>
                 </ul>
             </div>
@@ -116,7 +118,7 @@
         components:{navBars},
         data(){
             return{
-                login: false
+                login: true
             }
         },
         methods: {
@@ -229,7 +231,7 @@
             }
             .arrow{
                 width: 0.18rem;
-                margin: 0.06rem 0 0 0;
+                margin: 0.08rem 0 0 0;
             }
         }
         .utils{

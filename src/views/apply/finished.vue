@@ -59,7 +59,7 @@
                 font-size: 0.3rem;
             }
             .code{
-                margin: 0.4rem 0 0 0;
+                margin: 0.3rem 0 0 0;
                 width: 2.4rem;
             }
             p{
@@ -68,7 +68,7 @@
             }
             .tip{
                 text-align: left;
-                margin: 0.6rem 0 0.3rem 0;
+                margin: 0.5rem 0;
             }
             .login_type{
                 color:#030303;

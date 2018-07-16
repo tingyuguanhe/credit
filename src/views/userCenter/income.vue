@@ -5,7 +5,7 @@
             <p>我的收益</p>
             <div class="total">
                 <span>总收益：{{total}}元</span>
-                <button>提现</button>
+                <button>提&nbsp;&nbsp;现</button>
             </div>
             <div class="income">
                 <!-- 一级受益人 -->
@@ -90,21 +90,23 @@
                 color:#000;
                 font-weight: 500;
                 padding: 0;
+                margin-top: 0;
             }
             .total{
+                text-align: left;
                 margin: 0.6rem 0 0.4rem 0;
                 span{
                     color:#221815;
-                    font-size: 0.36rem;
+                    font-size: 0.32rem;
                 }
                 button{
-                    width: 2rem;
+                    width: 1.6rem;
                     background: #4070BF;
-                    height: 0.7rem;
-                    line-height: 0.66rem;
-                    font-size: 0.36rem;
+                    height: 0.54rem;
+                    line-height: 0.54rem;
+                    font-size: 0.3rem;
                     color:#fff;
-                    border-radius: 8px;
+                    border-radius: 5px;
                     margin: 0 0 0 0.4rem;
                 }
             }
@@ -112,10 +114,10 @@
             .income{
                 text-align: left;
                 color: #4070bf;
-                font-size: 0.36rem;
+                font-size: 0.32rem;
                 .head{
                     color: #221815;
-                    font-size: 0.36rem;
+                    font-size: 0.32rem;
                 }
                 .money{
                     margin: 0 0 0 0.8rem;

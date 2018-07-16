@@ -62,12 +62,12 @@
         }
         button{
             background: #4070BF;
-            border-radius: 15px;
+            border-radius: 10px;
             width: 100%;
             height: 0.9rem;
             line-height: 0.9rem;
             color:#fff;
-            font-size: 0.38rem;
+            font-size: 0.36rem;
         }
     }
     

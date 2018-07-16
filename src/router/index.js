@@ -33,6 +33,9 @@ import Authorize from '../views/authorize/index.vue'
 
 import Login from '../views/login/index.vue'
 
+import ArticleLibrary from '../views/tools/articleLibrary.vue'
+
+
 const router = new Router({
   routes: [
     {
@@ -187,6 +190,15 @@ const router = new Router({
         title:'登录'
       }
     },
+    {
+      path: '/article_library',
+      name: 'ArticleLibrary',
+      component: ArticleLibrary,
+      meta:{
+        title:'文章库'
+      }
+    },
+    
     
     
 
