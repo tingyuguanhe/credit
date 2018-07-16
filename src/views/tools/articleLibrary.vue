@@ -69,8 +69,8 @@
 .article_library{
     .nr{
         .head{
-            height: 1.2rem;
-            line-height: 1.2rem;
+            height: 1.1rem;
+            line-height: 1.1rem;
             background: #ccc;
             width: 100%;
             font-size: 0.34rem;
