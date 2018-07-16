@@ -83,7 +83,6 @@
         box-sizing: border-box;
         .nr{
             background: #fff;
-            margin: 0.2rem 0 0 0;
             padding: 0.3rem 1.2rem 1rem 1.2rem;
             border-radius: 10px;
             p{

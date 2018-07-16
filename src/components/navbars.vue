@@ -23,7 +23,7 @@
         <div class="list_modal" v-show="productsList">
             <ul>
                 <li v-for="(item,index) in productsData" :key="index" @click="routeLink('1', item)">{{item.name}}</li>
-                <li class="add">+</li>
+                <li class="add" @click="addNewAuthorize">+</li>
             </ul>
             <div class="arrow">
                 <img src="../assets/icons/arrow.png" alt="">
@@ -72,6 +72,9 @@
                         this.$router.push({name:'UserCenter'});
                     break;
                 }
+            },
+            addNewAuthorize(){
+                this.$router.push({name: 'Authorize'});
             }
         }
     }

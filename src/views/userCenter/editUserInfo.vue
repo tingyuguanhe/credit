@@ -58,15 +58,12 @@
                 <button class="next_step" @click="finishEdit">下一步</button>
             </div>
         </div>
-        <nav-bars></nav-bars>
     </div>
 </template>
     
 <script>
-    import navBars from '@/components/navbars'
-
+   
     export default{
-        components:{navBars},
         data(){
             return{
                 radioChecked: 0  //男
@@ -177,6 +174,7 @@
                 border-radius: 10px;
                 font-size: 0.3rem;
                 color:#fff;
+                margin-top: 1rem;
             }
         }
     }

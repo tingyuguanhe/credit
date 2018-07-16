@@ -29,6 +29,9 @@ import PlacardTpl from '../views/tools/placardTpl.vue'
 
 import OnlineApply from '../views/apply/onlineApply.vue'
 
+import Authorize from '../views/authorize/index.vue'
+
+
 
 const router = new Router({
   routes: [
@@ -167,8 +170,16 @@ const router = new Router({
       meta:{
         title:'在线申请'
       }
-      
-    }
+    },
+    {
+      path: '/authorize',
+      name: 'Authorize',
+      component: Authorize,
+      meta:{
+        title:'授权'
+      }
+    },
+    
 
     
 
