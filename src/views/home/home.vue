@@ -144,14 +144,14 @@
         .head{
             padding: 0.3rem 0.6rem;
             .check{
-                width: 1.8rem;
+                width: 1.6rem;
             }
             .hand{
                 width: 0.6rem;
                 margin: 0 0.2rem;
             }
             .daily{
-                width: 3.2rem;
+                width: 3rem;
                 vertical-align: bottom;
             }
         }

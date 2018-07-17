@@ -82,8 +82,8 @@
             height: 1rem;
             line-height: 1rem;
             color: #fff;
-            border-radius: 12px;
-            font-size: 0.4rem;
+            border-radius: 10px;
+            font-size: 0.36rem;
             margin: 0.3rem 0 0 0;
         }
     }
