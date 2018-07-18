@@ -48,7 +48,7 @@
         },
         methods: {
             registerNextStep(){
-                this.$router.push({name: 'EditUserInfo'});
+                this.$router.push({name: 'BaseUserInfo'});
             }
         }
     }

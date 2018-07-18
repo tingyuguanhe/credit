@@ -27,7 +27,7 @@
                     return
                 }else{
                     if(newVal.length == 4){
-                        this.$router.push({name:'EditUserInfo'});
+                        this.$router.push({name:'BaseUserInfo'});
                     }
                     
                 }

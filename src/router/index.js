@@ -16,7 +16,10 @@ import Setting from '../views/userCenter/setting.vue'
 import ArticleEdit from '../views/tools/articleEdit.vue';
 import Help from '../views/userCenter/help.vue'
 import Utils from '../views/userCenter/utils.vue'
-import EditUserInfo from '../views/userCenter/editUserInfo.vue'
+import BaseUserInfo from '../views/userInfo/baseInfo.vue'
+import IdCards from '../views/userInfo/idCards.vue'
+import PhotoAndWechat from '../views/userInfo/photoAndWechat.vue'
+
 
 import ChangePsd from '../views/userCenter/changePsd.vue'
 import CheckCode from '../views/userCenter/checkCode.vue'
@@ -34,7 +37,6 @@ import Authorize from '../views/authorize/index.vue'
 import Login from '../views/login/index.vue'
 
 import ArticleLibrary from '../views/tools/articleLibrary.vue'
-
 
 const router = new Router({
   routes: [
@@ -111,9 +113,9 @@ const router = new Router({
       }
     },
     {
-      path: '/edit_user_info',
-      name: 'EditUserInfo',
-      component: EditUserInfo,
+      path: '/base_user_info',
+      name: 'BaseUserInfo',
+      component: BaseUserInfo,
       meta:{
         title:'编辑用户信息'
       }
@@ -198,6 +200,24 @@ const router = new Router({
         title:'文章库'
       }
     },
+    {
+      path: '/id_cards',
+      name: 'IdCards',
+      component: IdCards,
+      meta:{
+        title:'上传身份证信息'
+      }
+    },
+    {
+      path: '/photo_and_wechat',
+      name: 'PhotoAndWechat',
+      component: PhotoAndWechat,
+      meta:{
+        title:'上传头像和微信二维码'
+      }
+    },
+
+    
     
     
     

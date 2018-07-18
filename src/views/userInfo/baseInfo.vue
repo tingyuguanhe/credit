@@ -33,29 +33,15 @@
                     <label>籍贯</label>
                     <input type="text" value="北京市海淀区西四环">
                 </li>
-                <li class="clearfix">
-                    <label for="">身份证号</label>
-                    <div class="clearfix btns">
-                        <button>上传身份证正面</button>
-                        <button>上传身份证反面</button>
-                    </div>
-                    <div class="user_id">
-                        <input type="text" value="131102197001010548">
-                    </div>
-                </li>
+                
                 <li class="clearfix">
                     <label>微信号码</label>
                     <input type="text" value="gwuowtuyut5">
                 </li>
-                <li>
-                    <div class="clearfix btns">
-                        <button>上传头像照片</button>
-                        <button>上传微信二维码</button>
-                    </div>
-                </li>
+                
             </ul>
             <div>
-                <button class="next_step" @click="finishEdit">下一步</button>
+                <button class="next_step" @click="nextStep">下一步</button>
             </div>
         </div>
     </div>
@@ -78,8 +64,8 @@
                     
                 } 
             },
-            finishEdit(){
-                this.$router.push({name: 'Finished'});
+            nextStep(){
+                this.$router.push({name: 'IdCards'});
             }
             
         }
@@ -97,7 +83,7 @@
         padding: 0.18rem;
         box-sizing: border-box;
         .nr{
-            padding: 0.3rem 1rem 0.6rem 1rem;
+            padding: 0.6rem 1rem 1.4rem 1rem;
             box-sizing: border-box;
             background: #fff;
             border-radius: 15px;
@@ -105,6 +91,7 @@
                 font-size: 0.45rem;
                 color:#221815;
                 font-weight: 500;
+                margin: 0.2rem 0 0.6rem 0;
             }
             .infos{
                 text-align: left;
@@ -115,10 +102,8 @@
                     border-bottom: 2px solid #8D8D8D;
                     min-height: 0.7rem;
                     line-height: 0.7rem;
-                    margin-bottom: 0.2rem;
-                    &:last-child{
-                        border-bottom: none;
-                    }
+                    margin-bottom: 0.4rem;
+                    
                     >label{
                         float: left;
                         margin-right: 0.3rem;
