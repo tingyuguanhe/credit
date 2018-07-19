@@ -11,7 +11,7 @@
             <ul class="infos">
                 <li class="clearfix">
                     <div class="img_wrap">
-                        <img  v-if="imgUrl" :src="imgUrl" class=""/>
+                        <img v-if="frontImgUrl" :src="frontImgUrl" class=""/>
                         <div class="tip">
                             <input type="file" value="">
                             <span>点击上传身份证</span>
@@ -22,7 +22,7 @@
                 </li>
                 <li class="clearfix">
                     <div class="img_wrap">
-                        <img  v-if="imgUrl" :src="imgUrl" class=""/>
+                        <img v-if="backImgUrl" :src="backImgUrl" class=""/>
                         <div class="tip">
                             <input type="file" value="">
                             <span>点击上传身份证</span>
@@ -43,7 +43,10 @@
     export default{
         data(){
             return{
-                imgUrl:''
+                frontImgUrl: '',
+                //frontImgUrl: require('../../assets/imgs/front.png'),
+                backImgUrl: ''
+                // backImgUrl: require('../../assets/imgs/back.png')
             }
         },
         methods: {
@@ -90,6 +93,10 @@
                     width: 100%;
                     height: 2.4rem;
                     border-radius: 3px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                    }
                 }
                 .tip{
                     font-size: 0.26rem;

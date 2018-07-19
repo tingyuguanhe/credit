@@ -6,22 +6,20 @@
             <ul class="infos">
                 <li class="clearfix">
                     <div class="img_wrap photo">
-                        <img  v-if="imgUrl" :src="imgUrl" class=""/>
+                        <img v-if="photoImgUrl" :src="photoImgUrl" class=""/>
                         <div class="tip">
                             <input type="file" value="">
                             <span>点击上传头像照片</span>
                         </div> 
-                        
                     </div>
                 </li>
                 <li class="clearfix">
-                    <div class="img_wrap">
-                        <img  v-if="imgUrl" :src="imgUrl" class=""/>
+                    <div class="img_wrap code">
+                        <img v-if="codeImgUrl" :src="codeImgUrl" class=""/>
                         <div class="tip">
                             <input type="file" value="">
                             <span>点击上传微信二维码</span>
                         </div> 
-                        
                     </div>
                 </li>
             </ul>
@@ -36,7 +34,10 @@
         export default{
             data(){
                 return{
-                    imgUrl:''
+                    // photoImgUrl: require('../../assets/imgs/timg.jpg'),
+                    // codeImgUrl: require('../../assets/imgs/code.png')
+                    photoImgUrl: '',
+                    codeImgUrl: ''
                 }
             },
             methods: {
@@ -74,14 +75,26 @@
                     .img_wrap{
                         background: #f6f6f6;
                         width: 100%;
-                        height: 2.4rem;
+                        height: 3rem;
                         border-radius: 3px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                        }
+                        &.photo{
+                            img{
+                                height: 3rem;
+                            }
+                        }
+                        &.code{
+                            height: 3.5rem;
+                        }
                     }
                     .tip{
                         font-size: 0.26rem;
                         position: relative;
                         input{
-                            height: 2.4rem;
+                            height: 3rem;
                             margin:0;
                             background: transparent;
                             opacity: 0;
@@ -92,16 +105,10 @@
                         }
                         span{
                             position: absolute;
-                            top: 0.8rem;
+                            top: 1.2rem;
                             left: 0.7rem;
                         }
                       
-                    }
-                    .photo{
-                        height:3.6rem;
-                        span{
-                            top: 1.4rem;
-                        }
                     }
                 }
             }
