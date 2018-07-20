@@ -28,7 +28,7 @@
             </div>
             <div class="btns">
                 <button @click="registerNextStep">下一步</button>
-                <button>返回老用户登录</button>
+                <button @click="login">返回老用户登录</button>
             </div>
         </div>
         <nav-bars></nav-bars>
@@ -49,6 +49,9 @@
         methods: {
             registerNextStep(){
                 this.$router.push({name: 'BaseUserInfo'});
+            },
+            login(){
+                this.$router.push({name:'Login'});
             }
         }
     }

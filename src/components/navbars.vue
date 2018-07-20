@@ -1,11 +1,13 @@
 <template>
     <div class="bottom_navs">
         <ul class="bars">
+            <li @click="routeLink('0')">
+                    <img src="../assets/icons/home.png" alt="">
+                    <div><span>首页</span></div>
+                </li>
             <li @click="showProductList">
                 <img src="../assets/icons/nav1.png" alt="">
-                <div>
-                    <span>产品展示</span>    
-                </div>
+                <div><span>产品展示</span></div>
             </li>
             <li @click="routeLink('2')">
                 <img src="../assets/icons/nav2.png" alt="">
@@ -59,6 +61,9 @@
             },
             routeLink(index,item){
                 switch (index){
+                    case "0":
+                        this.$router.push({name:'Home'});
+                    break;
                     case "1":
                         this.$router.push({name:'ProductCenter', params:{id: item.id}});
                     break;
@@ -92,11 +97,11 @@
             li{
                 position: relative;
                 float: left;
-                width: 25%;
+                width: 20%;
                 padding: 0.16rem 0;
                 box-sizing: border-box;
                 img{
-                    width: 0.62rem;
+                    width: 0.56rem;
                 }
                 div{
                     font-size: 0.22rem;
@@ -106,12 +111,11 @@
         }
         .list_modal{
             position: absolute;
-            left: 0.1rem;
+            left: 17%;
             bottom: 1.3rem;
             background: #ffff;
             border-radius: 5px;
             border: 2px solid #afa8a7;
-            
             li{
                 padding: 0 0.5rem;
                 height: 0.8rem;
