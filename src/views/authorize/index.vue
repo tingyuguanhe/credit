@@ -157,7 +157,7 @@
                             height: 0.56rem;
                             border-radius: 5px;
                             background: transparent;
-                            text-indent: -2rem;
+                            text-indent: -20rem;
                         }
                     }
                     label{
