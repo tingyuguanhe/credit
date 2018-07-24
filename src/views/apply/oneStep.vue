@@ -23,8 +23,13 @@
             </div>
             <div class="tip">初始密码为注册手机号</div>
             <div class="agree clearfix">
-                <span class="f_left check_box"></span>
-                <p class="f_left">我已阅读并同意注册条款</p>
+                <span class="f_left check_box" @click="handChecked">
+                    <img v-show="checked" src="../../assets/icons/checked.png" alt="">
+                </span>
+                <p class="f_left">
+                    <span @click="handChecked">我已阅读并同意</span>
+                    <router-link :to="{name: 'Agreement'}" class="agreement_link">注册条款</router-link>
+                </p>
             </div>
             <div class="btns">
                 <button @click="registerNextStep">下一步</button>
@@ -43,7 +48,8 @@
         data(){
             return{
                 name: 'XXXXXXX',
-                num:'（18766660909）'
+                num:'（18766660909）',
+                checked: false
             }
         },
         methods: {
@@ -52,6 +58,9 @@
             },
             login(){
                 this.$router.push({name:'Login'});
+            },
+            handChecked(){
+                this.checked = !this.checked;
             }
         }
     }
@@ -142,6 +151,14 @@
                     height: 0.24rem;
                     border:1px solid #21538B;
                     margin-top: 0.05rem;
+                    img{
+                        width: 0.2rem;
+                        vertical-align: text-top;
+                        margin: 0.02rem;
+                    }
+                }
+                .agreement_link{
+                    color: #2E7CD2;
                 }
                 p{
                     color: #21538B;

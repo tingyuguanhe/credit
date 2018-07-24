@@ -2,7 +2,8 @@
     <div class="home_page">
         <div class="head">
             <img class="check" src="../../assets/icons/check.png" alt="">
-            <img class="hand" src="../../assets/icons/hand1.png" alt="">
+            <img class="hand" v-show="handShow" src="../../assets/icons/hand1.png" alt="">
+            <img class="hand" v-show="!handShow" src="../../assets/icons/hand2.png" alt="">
             <img class="daily" src="../../assets/icons/people's_daily.png" alt="">
         </div>
         <div class="infos">
@@ -126,7 +127,18 @@
         components:{navBars},
         data(){
             return{
-
+                handShow: false
+            }
+        },
+        mounted () {
+            this.twinkle();
+        },
+        methods: {
+            twinkle(){
+                const _this = this;
+                setInterval(function(){
+                    _this.handShow = !_this.handShow;
+                },500)
             }
         }
     }
@@ -173,13 +185,13 @@
             background-size: contain;
             ul{
                 text-align: left;
-                padding: 1.8rem 0.8rem 0 0.5rem;
-                font-size: 0.222rem;
+                padding: 1.8rem 0.6rem 0 0.5rem;
+                font-size: 0.22rem;
                 color:#000;
                 font-weight: 500;
                 label{
                     display: inline-block;
-                    width: 1.2rem;
+                    width: 1.3rem;
                 }
             }
             .btns{

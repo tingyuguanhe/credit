@@ -20,12 +20,10 @@ import BaseUserInfo from '../views/userInfo/baseInfo.vue'
 import IdCards from '../views/userInfo/idCards.vue'
 import PhotoAndWechat from '../views/userInfo/photoAndWechat.vue'
 
-
 import ChangePsd from '../views/userCenter/changePsd.vue'
 import CheckCode from '../views/userCenter/checkCode.vue'
 
 import MyIncome from '../views/userCenter/income.vue'
-
 
 import MakePlacard from '../views/tools/makePlacard.vue'
 import PlacardTpl from '../views/tools/placardTpl.vue'
@@ -37,6 +35,8 @@ import Authorize from '../views/authorize/index.vue'
 import Login from '../views/login/index.vue'
 
 import ArticleLibrary from '../views/tools/articleLibrary.vue'
+
+import Agreement from '../views/userCenter/agreement.vue'
 
 const router = new Router({
   routes: [
@@ -216,6 +216,14 @@ const router = new Router({
         title:'上传头像和微信二维码'
       }
     },
+    {
+      path: '/agreement',
+      name: 'Agreement',
+      component: Agreement,
+      meta:{
+        title:'服务协议'
+      }
+    }
 
     
     

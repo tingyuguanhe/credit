@@ -166,7 +166,7 @@
                 width: 1.1rem;
                 height: 1.1rem;
                 border-radius: 50%;
-                margin: 0.04rem 0.3rem 0 0.4rem;
+                margin: 0.04rem 0.2rem 0 0.1rem;
                 box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
             }
             ul.infos{
