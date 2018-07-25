@@ -31,7 +31,7 @@
                 </li>
                 <li class="clearfix">
                     <label>籍贯</label>
-                    <input type="text" value="北京市海淀区西四环">
+                    <span @click="selectArea">{{areaString}}</span>
                 </li>
                 
                 <li class="clearfix">
@@ -40,10 +40,15 @@
                 </li>
                 
             </ul>
+           
             <div>
                 <button class="next_step" @click="nextStep">下一步</button>
             </div>
         </div>
+        <van-popup v-model="areaListShow" position="bottom">
+            <van-area :area-list="areaList" :columns-num="2" :value="selectAreasData" title="选择地址" @cancel="Cancel" @confirm="Confirm"/>
+        </van-popup>
+        
     </div>
 </template>
     
@@ -52,7 +57,23 @@
     export default{
         data(){
             return{
-                radioChecked: 0  //男
+                radioChecked: 0,  //男
+                areaListShow: false,
+                selectAreasData:'110100',
+                areaString:'北京市海淀区西四环',
+                areaList:{
+                    province_list: {
+                        110000: '北京市',
+                        120000: '天津市'
+                    },
+                    city_list: {
+                        110100: '北京市',
+                        110200: '县',
+                        120100: '天津市',
+                        120200: '县'
+                    }
+                },
+                
             }
         },
         methods: {
@@ -66,6 +87,19 @@
             },
             nextStep(){
                 this.$router.push({name: 'IdCards'});
+            },
+            selectArea(){
+                this.areaListShow = true;
+            },
+            Cancel(){
+                this.areaListShow = false;
+            },
+            Confirm(arr){
+                this.areaString = '';
+                for(let i =0 ;i<arr.length;i++){
+                    this.areaString += arr[i].name;
+                }
+                this.areaListShow = false;
             }
             
         }
@@ -161,6 +195,10 @@
                 color:#fff;
                 margin-top: 1rem;
             }
+        }
+
+        .van-picker{
+            font-size: 0.3rem !important;
         }
     }
 </style>
